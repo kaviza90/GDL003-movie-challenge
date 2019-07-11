@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="mainHeader">      
+
+  </header>
+  <main>
+
+  <section id="menuFilter">  
+    <section id="buttonsFilter">
+        <a id="superheroes" class="btn">Superheroes</a>
+        <a id="princesas" class="btn">Princesas</a>
+        <a id="animales" class="btn">Animales</a>
+        <a id="fantasia" class="btn">Fantasia</a>
+    </section>  
+    <section class="flexsearch">
+      <div class="flexsearch--wrapper">
+        <form class="flexsearch--form" action="#" method="post">
+          <div class="flexsearch--input-wrapper">
+            <input class="flexsearch--input" type="search" placeholder="search">
+          </div>
+    
+        </form>
+      </div>
+    </section>
+  </section>
+
+  <div id="indexContent">
+      <p class="intro"></p>
+      <!--boton para ver personajes-->
+      <button class="enterCharacters" id="go">Go to see them</button>
+  </div>
+    <!--personajes contenido-->
+  <div id="showMovies">
+    <img src="https://media.giphy.com/media/10bKPDUM5H7m7u/giphy.gif">
+  </div>
+
+<input class="flexsearch--submit" type="submit" value="&#10140;"/>
+  </main>
+
+  <!--enlaces-->
+  <script src="./data/rickandmorty/rickandmorty.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
