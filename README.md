@@ -1,63 +1,43 @@
-# Movie Challenge
+# Muvik
+
+![gif](https://i1.wp.com/applauss.com/wp-content/uploads/2016/01/gifs-animados-7.gif?resize=800%2C600)
 
 ## Índice
 
-- [Preámbulo](#preámbulo)
-- [Resumen del proyecto](#resumen-del-proyecto)
-- [Consideraciones generales](#consideraciones-generales)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Avances necesarios](#avances-necesarios)
-- [Consideraciones técnicas](#consideraciones-técnicas)
+- [Descripción del producto](#descripción-del-producto)
+- [¿Quiénes son los usuarios?](#quienes-son-los-usuarios)
+- [¿Qué solución les ofrece my movie Kids a los usuarios?](#que-solución-les-ofrece-my-movie-Kids-a-los-usuarios)
+- [¿Cuáles son las historias de usuario?](#como-se-realizo-el-trabajo)
+- [¿Cómo se realizo el trabajo?](#como-se-realizo-el-trabajo)
 
 ---
 
-## Preámbulo
+## Descripción del producto
 
-Con la aparición de plataformas para ver películas en la nube, como Netflix,
-Amazon Prime Video o HBO, ver películas desde donde estés, comiendo lo que quieras
-(sin tener que pagar precios ridículos por palomitas), parando si es necesario, teniendo acceso a una cantidad
-abrumadora de películas, etc. ha cambiado la experiencia del usuario
-y modificado el mercado de las películas a nivel global.
+MuviK es una web app de peliculas para niños desde los 0 hasta los 12 años de edad, que es administrada por los padres y/o tutores, pudiendo elegir el tiempo de visualización por día.
 
-![Pelis](https://i.giphy.com/media/3o6Ztl7RvfwCp9mqhW/source.gif)
+Además todo el contenido existente está verificado por expertos en el área de desarrollo infantil como psicólogos, pedagogos, docentes, pediatras, etc.
 
-## Resumen del proyecto
+## ¿Quiénes son los usuarios?
 
-Durante estos días crearás el producto que quieras alrededor del mundo
-de las películas. Puede ser un sitio que hable de las mejores películas
-latinoamericanas, uno que recomiende las películas recién estrenadas en algún servicio de streaming, uno de recomendaciones de películas de terror,
-comedia ... o... ¡lo que quieran!
+Padres, tutores y niños de 0 a 12 años de edad.
 
-## Consideraciones generales
+## ¿Qué solución les ofrece my movie Kids a los usuarios?
 
-- Este proyecto se debe resolver en equipos.
-- Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-- Tiempo para completar el reto: 3 días.
-- Habrán dos presentaciones, una a la mitad de la _reto_ y otra al final.
+- A los padres y tutores les da la confianza de que sus hijos verán peliculas con contenido sano, de acuerdo a su desarrollo cognitivo-emocional y edad
+- Los padres podran controlar el tiempo de visualización de los niños
+- Los niños podran divertirse ya que además de ver peliculas que les gusten podran interactuar con la plataforma de una manera segura
 
-## Objetivos de aprendizaje
+## ¿Cuáles son las historias de usuario?
 
-- Enfrentarte a un reto de corta duración en el que pongas
-  en práctica todo lo aprendido hasta ahora.
-  
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
+- Historia 1: madres, padres o tutores de niños de 0 a 12 años de edad. Queremos una web app en donde podamos controlar el tiempo de visualización de peliculas para niños, además de que el contenido sea seguro para ellos
 
-## Avances necesarios
+- Historia 2: niños de 0 a 12 años de edad, queremos una web app interesante, divertida y fácil de usar
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada integrante del
-  proyecto.
-- El producto deberá presentarse publicado en github pages.
+## ¿Cómo se realizo el trabajo?
 
-## Consideraciones técnicas
-
-- El diseño visual de los componentes es de libre elección.
-- Pueden usar algún framework de css si así lo deciden.
-
-## Sobre las presentaciones
-
-- Cada squad tendrá 3 minutos para presentar y 2 minutos para recibir preguntas.
+- Primero se hizo una lluvia de ideas dentro del equipo para saber el usuario al que iba a dirigirse el producto.
+- Una vez definido nuestros usuarios, procedimos con el prototipo de baja fidelidad.
+- La realización de la encuesta para conocer lo que piensan nuestros usuarios acerca del tema y la plataforma [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfPG2Ri-IBIU5IUiowmWxhWMiiiloMRraqCysFwBlSTijK-sA/viewform?usp=sf_link)
+- A partir de la encuesta validamos nuestra idea y diseñamos el prototipo de alta fidelidad
+- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) y el README
