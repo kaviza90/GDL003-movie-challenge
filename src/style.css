@@ -231,6 +231,9 @@ input[type=text] {
   margin: 4px 2px;
   cursor: pointer;
 }
+.imgDumbo{
+ max-width: 40%;
+}
 
 iframe {
   margin-top: 50px;
