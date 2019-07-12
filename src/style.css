@@ -7,6 +7,13 @@ body{
     margin: 0;
     padding: 0;
 }
+#nameApp{
+  font-family: helvetica;
+  font-size: 40px;
+  color: black;
+}
+
+
 /*Comienza estilo de menú*/
 a
 {
