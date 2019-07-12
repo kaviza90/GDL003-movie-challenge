@@ -1,16 +1,43 @@
 # Muvik
 
-![gif](https://i1.wp.com/applauss.com/wp-content/uploads/2016/01/gifs-animados-7.gif?resize=800%2C600)
+![gif](https://media.giphy.com/media/AgPdLHbk9H390U2kAH/giphy.gif)
 
 ## Índice
 
+- [Proceso](#como-se-realizo-el-trabajo)
 - [Descripción del producto](#descripción-del-producto)
 - [¿Quiénes son los usuarios?](#quienes-son-los-usuarios)
 - [¿Qué solución les ofrece my movie Kids a los usuarios?](#que-solución-les-ofrece-my-movie-Kids-a-los-usuarios)
 - [¿Cuáles son las historias de usuario?](#como-se-realizo-el-trabajo)
-- [¿Cómo se realizo el trabajo?](#como-se-realizo-el-trabajo)
+
 
 ---
+
+## Proceso
+
+- Para generar el concepto de la aplicación utilizamos la metodología de **Design Thinking** para tener una lluvia de ideas. En esta etapa definimos nuestros usuarios y generamos el pseudocódigo de MuviK.
+
+- Cuando definimos nuestra app hicimos un relevamiento visual de los que serían nuestra competencia directa para ver sus diagramas de flujo, estructura de información y diseño.
+
+- Al tener claro nuestro concepto de aplicación y roles de usuarios hicimos los primeros bocetos para definir el flujo con un prototipo de baja fidelidad.
+![Pantallas 1, 2 y 3](https://i.ibb.co/nfHfst8/boceto1.jpg)
+![Pantallas 4, 5 y 6](https://i.ibb.co/74DjcWV/boceto2.jpg)
+![Pantalla 7](https://i.ibb.co/gdrpCD2/boceto3.jpg)
+
+-Teniendo nuestro diagrama de flujo comenzamos a generar la estructura de nuestras encuestas para saber lo que piensan nuestros usuarios.
+(En el siguiente enlace se muestra el formato de nuestras encuestsa)
+[encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfPG2Ri-IBIU5IUiowmWxhWMiiiloMRraqCysFwBlSTijK-sA/viewform?usp=sf_link)
+-Acontinuación se muestran algunos resultados.
+![gif](https://media.giphy.com/media/AgPdLHbk9H390U2kAH/giphy.gif)
+
+-Cuando obtuvimos el resultado de nuestra encuesta validamos nuestra idea y comenzamos a maquetar la aplicación.
+
+
+
+
+- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) (Paulina Montoya, realizo la interfaz en html y css; Belem Morales hizo la parte del manejo de la data con el uso de fetch) y el README (realizado por Karla)
+
+
 
 ## Descripción del producto
 
@@ -34,10 +61,3 @@ Padres, tutores y niños de 0 a 12 años de edad.
 
 - Historia 2: niños de 0 a 12 años de edad, queremos una web app interesante, divertida y fácil de usar
 
-## ¿Cómo se realizo el trabajo?
-
-- Primero se hizo una lluvia de ideas dentro del equipo para saber el usuario al que iba a dirigirse el producto (hecha por Paulina, Belem y Karla)
-- Una vez definido nuestros usuarios, procedimos con el prototipo de baja fidelidad y el nombre de nuestro producto (Belem, Paulina y Karla)
-- La realización de la encuesta para conocer lo que piensan nuestros usuarios acerca del tema y la plataforma [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfPG2Ri-IBIU5IUiowmWxhWMiiiloMRraqCysFwBlSTijK-sA/viewform?usp=sf_link) (hecha por Karla Viera)
-- A partir de la encuesta validamos nuestra idea (Karla) y diseñamos el prototipo de alta fidelidad (Paulina)
-- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) (Paulina Montoya, realizo la interfaz en html y css; Belem Morales hizo la parte del manejo de la data con el uso de fetch) y el README (realizado por Karla)
