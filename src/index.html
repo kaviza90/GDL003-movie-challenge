@@ -12,47 +12,133 @@
 </head>
 
 <body>
-  <header id="mainHeader">      
-
+  <header id="intro">      
+      <img src="https://media.giphy.com/media/3eTLDVfUYKmbuF4TkW/giphy.gif">
+      <br>
+      <p>Tus hijos tendrán acceso ilimitado a películas que les gustarán. Y tú estarás seguro de que su contenido será educativo para estimular su desarrollo.</p>
+      <br>
+      <span class="circle"></span>
+      <span class="circle2"></span>
+      <span class="circle2"></span>
+      <br>
+      <button class="buttons" id="goFormParents">Suscribirse</button>
   </header>
+
   <main>
+    <section id="allMenu" >
+      <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <!--<li id="avatar"><img src="https://media.giphy.com/media/2sZ94OhoIE9BQYg1Qn/giphy.gif" alt=""> </li>-->
 
-  <section id="menuFilter">  
-    <section id="buttonsFilter">
-        <a id="superheroes" class="btn">Superheroes</a>
-        <a id="princesas" class="btn">Princesas</a>
-        <a id="animales" class="btn">Animales</a>
-        <a id="fantasia" class="btn">Fantasia</a>
-    </section>  
-    <section class="flexsearch">
-      <div class="flexsearch--wrapper">
-        <form class="flexsearch--form" action="#" method="post">
-          <div class="flexsearch--input-wrapper">
-            <input class="flexsearch--input" type="search" placeholder="search">
+              <a href="#"><li>Ir a buscar</li></a>
+              <a href="#"><li>Pedro</li></a>
+              <a href="#"><li>Ana</li></a>
+              <a href="#"><li>Contacto</li></a>
+              <a href="https://github.com/PaulinaMontoya/GDL003-movie-challenge" target="_blank"><li>GitHub</li></a>
+            </ul>
           </div>
-    
-        </form>
-      </div>
+        </nav>
+      </section>  
+
+    <section id="formParents">
+      <img src="https://media.giphy.com/media/OPf9DOP7HciR0T1T1q/giphy.gif">
+      <p class="introform">Contesta el siguiente formulario para suscribirte</p>
+      <form>
+        <label class="txtform" for="fname">Nombre</label>
+        <br>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label class="txtform" for="lname">Apellido</label>
+        <br>
+        <input type="text" id="lname" name="lname">
+      </form>
+      <button class="buttons" id="goFormKids">Continuar</button>
     </section>
-  </section>
 
-  <div id="indexContent">
-      <p class="intro"></p>
-      <!--boton para ver personajes-->
-      <button class="enterCharacters" id="go">Go to see them</button>
-  </div>
-    <!--personajes contenido-->
-  <div id="showMovies">
-    <img src="https://media.giphy.com/media/10bKPDUM5H7m7u/giphy.gif">
-  </div>
+    <section id="formKids">
+        <img src="https://media.giphy.com/media/63JANyFwA80m1NrFIW/giphy.gif">
+        <p class="introform">Crea el perfil de los niños que accederan a las películas</p>
+        <form>
+          <label class="txtform" for="fname">Nombre</label>
+          <br>
+          <input type="text" id="fname" name="fname">
+          <br>
+          <label class="txtform" for="lname">Apellido</label>
+          <br>
+          <input type="text" id="lname" name="lname">
+        </form>
+        <button id="buttonPlus">+</button>
+        <br>
+          <section id="formPlus">
+              <form>
+                  <label class="txtform" for="fname">Nombre</label>
+                  <br>
+                  <input type="text" id="fname" name="fname">
+                  <br>
+                  <label class="txtform" for="lname">Apellido</label>
+                  <br>
+                  <input type="text" id="lname" name="lname">
+                </form>
+          </section>
+        <button class="buttons" id="enter">Continuar</button>
+    </section>
 
-<input class="flexsearch--submit" type="submit" value="&#10140;"/>
+
+
+    <section id="search">
+      <img src="https://media.giphy.com/media/9rlYyDEXdGE9B5xMWI/giphy.gif">
+      <p class="introform">Comienza a explorar</p>
+      <button class="buttonsFilter" id="fantasy">Fantasia</button>
+      <button class="buttonsFilter" id="animals">Animales</button>
+      <button class="buttonsFilter" id="heroes">Superheroes</button>
+      <button class="buttonsFilter" id="princess">Princesas</button>
+      <form>
+        <input onkeyup="getMovie(document.getElementById('qurybox').value)" id="qurybox" type="text" name="search" placeholder="Buscar película...">
+
+
+        </form>
+      <button class="buttons" id="buttonShowMovies">Buscar</button>  
+    </section>  
+
+    <section id="showMovies">
+     <section id="show">
+
+     </section>
+      <img src="https://media.giphy.com/media/10bKPDUM5H7m7u/giphy.gif">
+      <br>
+      <button class="buttons" id="buttonWatchMovie">Ver película</button>   
+    </section>
+
+    <section id="watchMovie">
+      <button class="buttons" id="backSearch">Regresar</button> 
+      <br>
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+      <img src="https://media.giphy.com/media/10bKPDUM5H7m7u/giphy.gif">
+      
+      <p class="introform">Reseñas y comentarios de expertos</p>
+      <div class="container">
+      <img src="https://markethax.com/generador-de-buyer-persona/img/avatar_4.png" alt="Avatar" style="width:90px">
+      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>John Doe saved us from a web disaster.</p>
+      </div>
+
+<div class="container">
+  <img src="https://markethax.com/generador-de-buyer-persona/img/avatar_4.png" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> CEO at Company.</p>
+  <p>No one is better than John Doe.</p>
+</div>
+
+    </section>
   </main>
 
-  <!--enlaces-->
-  <script src="./data/rickandmorty/rickandmorty.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-</body>
-
-</html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+  </html>

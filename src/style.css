@@ -1,18 +1,268 @@
-*{ /*quita bordes por defecto*/
+*{ 
     box-sizing: border-box;
-    margin: 10px;
+}
+body{
+    background:white;
+    text-align: center;
+    margin: 0;
     padding: 0;
 }
+/*Comienza estilo de menú*/
+a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+a:hover
+{
+  color:black;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer; 
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #F2B705;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #F2B705;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/*Termina menú*/
 
-body{/*fondo de cuerpo y alineacion*/
-    background: #2D3FA6;
-    text-align: center;
+.buttonsFilter{
+  background:#F2B705;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  border: 5px #F2B705;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+}
+.buttonsFilter:hover{
+  -webkit-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
-header{/*ancho de encabezado*/
-    width: 100%;
-    position: fixed;
+/*Comienza search*/
+
+input[type=text] {
+  width: 60px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
+
+input[type=text]:focus {
+  width: 70%;
+}
+/*Termina search*/
+
+
+header{
+  margin-top: 30px;
+  width: 100%;
+  position: fixed;
+}
+#intro > p {
+  font-family: helvetica;
+  font-size: 20px;
+  padding: 20px 50px 0 50px;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.circle:before {
+  content: ' \25CF';
+  font-size: 20px;
+  color: black;
+}
+.circle2:before {
+  content: ' \25CF';
+  font-size: 20px;
+  color:#F2B705;
+}
+.buttons{
+  background: #F2B705;
+  border-radius: 0px;
+  font-family:Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  height: 60px;
+  width: 230px;
+  color:white;
+  margin-top: 20px;
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.introform {
+  font-family: helvetica;
+  font-size: 20px;
+}
+.txtform{
+  font-family: helvetica;
+  font-size: 14px;
+}
+#formParents {
+  margin-top: 20px;
+  font-family: helvetica;
+}
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+#buttonPlus {
+  border-radius: 100%;
+  background-color:black;
+  border-style: solid;
+  border: black;
+  color:#F2B705;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+iframe {
+  margin-top: 50px;
+  width: 800px;
+  height: 500px;
+}
+
+/* Comienzan testimonios */
+.container {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  border:none;
+  border: 2px solid #F2B705;
+  background-color:  #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+  
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+.container img {
+  float: center;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+
 
 /* Color Theme Swatches in Hex */
 .Start-Smart-1-hex { color: #62CDD9; }
@@ -20,400 +270,3 @@ header{/*ancho de encabezado*/
 .Start-Smart-3-hex { color: #F29F05; }
 .Start-Smart-4-hex { color: #BF7E04; }
 .Start-Smart-5-hex { color: #D97971; }
-
-  
-
-#menuFilter{
-    display: inline;
-    margin-top: 500px;
-}
-.btn{
-    font-family: Arial;
-    display: inline-block;
-    text-decoration: none;
-    color: #62CDD9;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 50%;
-    border: solid 2px #62CDD9;
-    text-align: center;
-    vertical-align: middle;
-    overflow: hidden;
-    font-weight: bold;
-    transition: .4s;
-  }
-  
-  .btn:hover {
-      background: #62CDD9;
-  }
-
-.flexsearch--wrapper {
-    text-align: center;
-	width: auto;
-	max-width: 20%;
-	overflow: hidden;
-	background: transparent;
-
-	display: inline;
-}
-	
-.flexsearch--form {
-	overflow: hidden;
-	position: relative;
-}
-	
-.flexsearch--input-wrapper {
-	padding: 0 66px 0 0; /* Right padding for submit button width */
-	overflow: hidden;
-}
-
-.flexsearch--input {
-  width: 50%;
-}
-
-/***********************
- * Configurable Styles *
- ***********************/
-.flexsearch {
-  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
-}
-
-.flexsearch--input {
-  -webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
- 	height: 60px;
-  padding: 0 46px 0 10px;
-	border-color: #030A8C;
-  border-radius: 35px; /* (height/2) + border-width */
-  border-style: solid;
-	border-width: 5px;
-  margin-top: 15px;
-  color: #333;
-  font-family: 'Helvetica', sans-serif;
-	font-size: 26px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-	
-.flexsearch--submit {
-  position: absolute;
-	right: 0;
-	top: 0;
-	display: block;
-	width: 60px;
-	height: 60px;
-  padding: 0;
-  border: none;
-	margin-top: 20px; /* margin-top + border-width */
-  margin-right: 5px; /* border-width */
-	background: transparent;
-  color: #030A8C;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 40px;
-  line-height: 60px;
-}
-
-.flexsearch--input:focus {
-  outline: none;
-  border-color: #030A8C;
-}
-
-.flexsearch--input:focus.flexsearch--submit {
- 	color: #030A8C; 
-}
-
-.flexsearch--submit:hover {
-  color: #030A8C;
-  cursor: pointer;
-}
-
-::-webkit-input-placeholder {
-	color: #888;  
-}
-
-input:-moz-placeholder {
-  color: #888
-}
-
-
-/****************
- * Pretify demo *
- ****************/
-.h1 {
-  float: left;
-  margin: 25px;
-  color: #333;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 45px;
-  text-align: center;
-}
-
-
-.img-ram{/*logo de rick and morty, ajuste de tamaño*/
-    display: inline;
-    margin: 100px 0 80px 0;
-    width: 20%;
-}
-#img-logo {
-    margin-top: -300px;
-    margin-bottom: -80px;
-}
-.intro{/*estilo de introduccion*/
-    font-family:'Merriweather', serif;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: -5%;
-    margin-bottom: 0%;
-    letter-spacing: 1px;
-}
-#go{/*estilo para boton de ir*/
-    background: #F28B0C;
-    border-radius: 5px;
-    font-family:'Merriweather', serif;
-    font-size: 20px;
-    font-weight: bold;
-    height: 60px;
-    width: 230px;
-    color: #326962;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    letter-spacing: 1px;
-}
-.season{/*estilo para botones de temporadas*/
-    display: inline;
-    background: #326962;
-    border-radius: 5px;
-    font-family:'Merriweather', serif;
-    font-size: 18px;
-    font-weight: bold;
-    height: 60px;
-    width: 20%;
-    color: #a9f536;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    letter-spacing: 1px;
-    border-bottom-color: #a9f536;
-}
-
-.season:hover{/*que cambie de color al pasar el mouse en botones de temporadas*/
-   background:#2c4a45;
-}
-#chooseEpisode{/*medidas para opcion escoger*/
-   display: inline-block;
-   text-align: center;
-   padding-left: 40%;
-   padding-right: 40%;
-}
-.choose{/*estilo para escoger episodio*/
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    background:#a9f536;
-    color: #326962;
-    padding: 20px 20px;
-    width: 250px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.chapter>li{/*estilo para opcion de capitulo*/
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    color: #326962;
-    background: #a9f536;
-    text-decoration: none;
-    display: block;
-}
-.chapter {/*que no se vea estilo lista*/
-    list-style: none;
-}
-.chapter>li:hover{/*que cambie de color los capitulos al pasar el mouse*/
-    background: #2c4a45;
-}
-#order{/*estilo para orden por*/
-    font-size: 20px;
-    font-family: 'Merriweather', serif;
-    font-weight: inherit;
-    margin: 10px 0 20px 0;
-    color: #fff;
-}
-.buttonorder{/*estilo para elementos dentro del orden*/
-    text-decoration: underline;
-    font-family: 'Merriweather', serif;
-    font-weight: inherit;
-    text-decoration: none;
-    padding:  10px 10px;
-    color: #a9f536;
-    background: #2c4a45;
-    margin-top: 10px;
-    border-color: none;
-}
-.buttonorder a:hover{/*que cambie de color los elementos dentro de orden*/
-    background: #2c4a45;
-}
-.buttonorder.active {
-    background-color: #666;
-    color: white;
-  }
-
-#data{/*estilo para estadistica*/
-    font-family: 'Merriweather', serif;
-    color: white;
-    font-size: 20px;
-    margin-bottom: 60px;
-}
-#cardscharacters{
-    text-align: center;
-}
-
-.character {
-  display: inline-block;
-  text-align: center;
-  width: 25%;
-  margin: 25px;
-}
-.txtcharacter {
-  text-align: center;
-  background: #2E4643;
-  padding: 20px;
-  margin-top: 0;
-}
-.namecharacter {
-  color:#C1DE47;
-  text-align: center;
-  font-size: 22px;
-  margin: 0 0 15px 0;
-}
-.datacharacter{
-  color:#fff;
-  text-align: center;
-  font-size: 18px;
-  margin: 0 auto;
-  list-style:none;
-}
-.imgcharacter{
-  width: 100%;
-}
-footer{/*fondo de pie de pagina*/
-    width: 100%;
-    background: #a9f536;
-    font-family: 'Merriweather', serif;
-    color: #326962;
-    position: static;
-}
-footer > ul {
-  padding: 40px;
-  list-style: none;
-}
-.link{/*estilo para link de pagina oficial*/
-    font-family: 'Merriweather', serif;
-    color: #326962;
-    font-size: 15px;
-    text-decoration: none;
-}
-.link:hover{/*que cambie de color al pasar por el link*/
-    color: #2c4a45;
-}
-.linkGitHub a{/*estilo para link de colaboradoras*/
-    font-family: 'Merriweather', serif;
-    color: #326962;
-    font-size: 15px;
-    text-decoration: none;
-}
-.linkGitHub a:hover{/*que cambie de color al pasar por el link*/
-    color: #2c4a45;
-}
-
-
-
-@media screen and (max-width:620px) {
-  /* For mobile phones: */
-.season {
-  display: inline;
-  font-size: 14px;
-}
-.img-ram{/*logo de rick and morty, ajuste de tamaño*/
-    display: inline;
-    margin: 100px 0 20px 0;
-    width: 60%;
-}
-#img-logo {
-    width: 50%;
-    margin-top: -300px;
-    margin-bottom: -80px;
-}
-}
-
-@media screen and (max-width:375px) {
-    #img-logo {
-        width: 80%;
-        margin-top: -300px;
-        margin-bottom: -80px;
-    }
-
-    nav>ul{/*estilo tabla, tamaño y fondo del menu*/
-        display: inline;
-        overflow: hidden;
-        width: 100%;
-      /*  position: relative;  */
-        padding: 25px;
-    } 
-    nav{/*tamaño del menu del nav*/
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
-        background: #a9f536;
-    }
-    .season{/*estilo para botones de temporadas*/
-        display: inline;
-        background: #326962;
-        border-radius: 5px;
-        font-family:'Merriweather', serif;
-        font-size: 18px;
-        font-weight: bold;
-        height: 60px;
-        width: 50%;
-        color: #a9f536;
-        margin-top: 1%;
-        margin-bottom: 5%;
-        letter-spacing: 1px;
-        border-bottom-color: #a9f536;
-    }
-    nav{/*tamaño del menu del nav*/
-        margin: 0 auto;
-        width: 100%;
-        background: #a9f536;
-        padding: 8% 0 8% 0;
-    }
-    .buttonorder{/*estilo para elementos dentro del orden*/
-        text-decoration: underline;
-        font-family: 'Merriweather', serif;
-        font-weight: inherit;
-        text-decoration: none;
-        padding:  20px;
-        color: #a9f536;
-        background: #2c4a45;
-        margin-top: 10px;
-        border-color: none;
-        font-size: 18px;
-        border-radius: 5px;
-    }
-    .linkGitHub a{/*estilo para link de colaboradoras*/
-        font-family: 'Merriweather', serif;
-        color: #326962;
-        font-size: 16px;
-        text-decoration: none;
-    }  
-    .link{/*estilo para link de pagina oficial*/
-        font-family: 'Merriweather', serif;
-        color: #326962;
-        font-size: 16px;
-        text-decoration: none;
-    }  
-
-
-}
