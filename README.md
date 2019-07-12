@@ -36,8 +36,8 @@ Padres, tutores y niños de 0 a 12 años de edad.
 
 ## ¿Cómo se realizo el trabajo?
 
-- Primero se hizo una lluvia de ideas dentro del equipo para saber el usuario al que iba a dirigirse el producto.
-- Una vez definido nuestros usuarios, procedimos con el prototipo de baja fidelidad.
-- La realización de la encuesta para conocer lo que piensan nuestros usuarios acerca del tema y la plataforma [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfPG2Ri-IBIU5IUiowmWxhWMiiiloMRraqCysFwBlSTijK-sA/viewform?usp=sf_link)
-- A partir de la encuesta validamos nuestra idea y diseñamos el prototipo de alta fidelidad
-- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) y el README
+- Primero se hizo una lluvia de ideas dentro del equipo para saber el usuario al que iba a dirigirse el producto (hecha por Paulina, Belem y Karla)
+- Una vez definido nuestros usuarios, procedimos con el prototipo de baja fidelidad y el nombre de nuestro producto (Belem, Paulina y Karla)
+- La realización de la encuesta para conocer lo que piensan nuestros usuarios acerca del tema y la plataforma [encuesta](https://docs.google.com/forms/d/e/1FAIpQLSfPG2Ri-IBIU5IUiowmWxhWMiiiloMRraqCysFwBlSTijK-sA/viewform?usp=sf_link) (hecha por Karla Viera)
+- A partir de la encuesta validamos nuestra idea (Karla) y diseñamos el prototipo de alta fidelidad (Paulina)
+- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) (Paulina Montoya, realizo la interfaz en html y css; Belem Morales hizo la parte del manejo de la data con el uso de fetch) y el README (realizado por Karla)
