@@ -2,15 +2,22 @@
 
 let data;
 
-
-
-
+document.getElementById("intro").style.display = "none";
 document.getElementById("showMovies").style.display = "none";
 document.getElementById("formParents").style.display = "none";
 document.getElementById("formKids").style.display = "none";
 document.getElementById("search").style.display = "none";
 document.getElementById("allMenu").style.display = "none";
 document.getElementById("watchMovie").style.display = "none";
+
+
+const goEnterApp = () => {
+  document.getElementById("intro").style.display = "block";
+  document.getElementById("introApp").style.display = "none";
+};
+
+document.getElementById("goMuvik").addEventListener("click", goEnterApp);
+
 
 const formParents = () => {
   document.getElementById("formParents").style.display = "block";  
@@ -45,13 +52,12 @@ const goSearch = () => {
 
 document.getElementById("enter").addEventListener("click", goSearch);
 
-/*const goShowMovies = () => {
+const goShowMovies = () => {
   document.getElementById("showMovies").style.display = "block";
   
-  
 
-};*/
-
+};
+/*
 const getMovie = (q) =>{
   $.get("https://www.omdbapi.com/?s="+q+"&apikey=fc3cf220", function(rawdata)
   {
@@ -68,6 +74,7 @@ const getMovie = (q) =>{
   +imdburl+"'target='_blank'>"
   +imdburl+"</a></p>"; }); 
   }
+  */
 
 document.getElementById("buttonShowMovies").addEventListener("click", getMovie);
 
