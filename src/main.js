@@ -11,7 +11,6 @@ document.getElementById("allMenu").style.display = "none";
 document.getElementById("watchMovie").style.display = "none";
 document.getElementById("showFantasy").style.display = "none";
 
-
 const goEnterApp = () => {
   document.getElementById("intro").style.display = "block";
   document.getElementById("introApp").style.display = "none";

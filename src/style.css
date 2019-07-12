@@ -12,8 +12,6 @@ body{
   font-size: 40px;
   color: black;
 }
-
-
 /*Comienza estilo de menú*/
 a
 {
@@ -25,6 +23,10 @@ a
 a:hover
 {
   color:black;
+}
+#perfilKid{
+  font-style: bold;
+  color: black;
 }
 #menuToggle
 {
@@ -113,7 +115,6 @@ a:hover
   transform: none;
 }
 /*Termina menú*/
-
 .buttonsFilter{
   background:#F2B705;
   margin-top: 20px;
@@ -137,9 +138,7 @@ a:hover
   -ms-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
-
 /*Comienza search*/
-
 input[type=text] {
   width: 60px;
   box-sizing: border-box;
@@ -159,8 +158,6 @@ input[type=text]:focus {
   width: 70%;
 }
 /*Termina search*/
-
-
 header{
   margin-top: 30px;
   width: 100%;
@@ -234,13 +231,11 @@ input[type=text] {
 .imgDumbo{
  max-width: 40%;
 }
-
 iframe {
   margin-top: 50px;
   width: 800px;
   height: 500px;
 }
-
 /* Comienzan testimonios */
 .container {
   display: inline-block;
@@ -254,25 +249,20 @@ iframe {
   margin: 16px 0
   
 }
-
 .container::after {
   content: "";
   clear: both;
   display: inline;
 }
-
 .container img {
   float: center;
   margin-right: 20px;
   border-radius: 50%;
 }
-
 .container span {
   font-size: 20px;
   margin-right: 15px;
 }
-
-
 
 /* Color Theme Swatches in Hex */
 .Start-Smart-1-hex { color: #62CDD9; }
