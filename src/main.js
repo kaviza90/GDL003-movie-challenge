@@ -1,6 +1,6 @@
 
 
-let data;
+/*let data;*/
 
 document.getElementById("intro").style.display = "none";
 document.getElementById("showMovies").style.display = "none";
@@ -9,6 +9,7 @@ document.getElementById("formKids").style.display = "none";
 document.getElementById("search").style.display = "none";
 document.getElementById("allMenu").style.display = "none";
 document.getElementById("watchMovie").style.display = "none";
+document.getElementById("showFantasy").style.display = "none";
 
 
 const goEnterApp = () => {
@@ -54,29 +55,16 @@ document.getElementById("enter").addEventListener("click", goSearch);
 
 const goShowMovies = () => {
   document.getElementById("showMovies").style.display = "block";
-  
-
 };
-/*
-const getMovie = (q) =>{
-  $.get("https://www.omdbapi.com/?s="+q+"&apikey=fc3cf220", function(rawdata)
-  {
-  let rawstring =JSON.stringify(rawdata);
-  data =JSON.parse(rawstring);
-  let title = data.Search[0].Title;
-  let year = data.Search[0].Year; 
-  let imdburl="https://www.imdb.com/title/+data.Sear[0].imdbID+"/";
-  let posterurl =data.Search[0].Poster;
-  document.getElementById('answer').innerHTML=
-  "<h1>"+title+"</h1><br> <img src= '"
-  +posterurl+"'><br><p> Year Released:"
-  +year+"</p> <br> <p> IMDB page: <a href='"
-  +imdburl+"'target='_blank'>"
-  +imdburl+"</a></p>"; }); 
-  }
-  */
 
-document.getElementById("buttonShowMovies").addEventListener("click", getMovie);
+document.getElementById("buttonShowMovies").addEventListener("click", goShowMovies);
+
+const goShowFantasy = () => {
+  document.getElementById("showFantasy").style.display = "block";
+};
+
+document.getElementById("fantasy").addEventListener("click", goShowFantasy);
+
 
 const goWatchMovies = () => {
   document.getElementById("watchMovie").style.display = "block";
