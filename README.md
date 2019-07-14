@@ -10,7 +10,6 @@
 - [¿Qué solución les ofrece my movie Kids a los usuarios?](#que-solución-les-ofrece-my-movie-Kids-a-los-usuarios)
 - [¿Cuáles son las historias de usuario?](#como-se-realizo-el-trabajo)
 
-
 ---
 
 ## Proceso
@@ -20,9 +19,9 @@
 - Cuando definimos nuestra app hicimos un relevamiento visual de los que serían nuestra competencia directa para ver sus diagramas de flujo, estructura de información y diseño.
 
 - Al tener claro nuestro concepto de aplicación y roles de usuarios hicimos los primeros bocetos para definir el flujo con un prototipo de baja fidelidad.
-![Pantallas 1, 2 y 3](https://i.ibb.co/nfHfst8/boceto1.jpg)
-![Pantallas 4, 5 y 6](https://i.ibb.co/74DjcWV/boceto2.jpg)
-![Pantalla 7](https://i.ibb.co/gdrpCD2/boceto3.jpg)
+  ![Pantallas 1, 2 y 3](https://i.ibb.co/nfHfst8/boceto1.jpg)
+  ![Pantallas 4, 5 y 6](https://i.ibb.co/74DjcWV/boceto2.jpg)
+  ![Pantalla 7](https://i.ibb.co/gdrpCD2/boceto3.jpg)
 
 -Teniendo nuestro diagrama de flujo comenzamos a generar la estructura de nuestras encuestas para saber lo que piensan nuestros usuarios.
 (En el siguiente enlace se muestra el formato de nuestras encuestsa)
@@ -32,12 +31,7 @@
 
 -Cuando obtuvimos el resultado de nuestra encuesta validamos nuestra idea y comenzamos a maquetar la aplicación.
 
-
-
-
-- A la par se fue haciendo el código para utizar la data de la API de OMDB (The Open Movie Database) (Paulina Montoya, realizo la interfaz en html y css; Belem Morales hizo la parte del manejo de la data con el uso de fetch) y el README (realizado por Karla)
-
-
+![gráfica1](/src/grafica1.png)
 
 ## Descripción del producto
 
@@ -60,4 +54,3 @@ Padres, tutores y niños de 0 a 12 años de edad.
 - Historia 1: madres, padres o tutores de niños de 0 a 12 años de edad. Queremos una web app en donde podamos controlar el tiempo de visualización de peliculas para niños, además de que el contenido sea seguro para ellos
 
 - Historia 2: niños de 0 a 12 años de edad, queremos una web app interesante, divertida y fácil de usar
-
